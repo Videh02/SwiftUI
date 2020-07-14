@@ -24,17 +24,19 @@ struct ImageOverlay: View {
 struct ContentView: View {
     let gradient = Gradient(colors: [.red, .green, .blue])
     var body: some View {
-        VStack {
-            Image("batman")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 250, height: 250, alignment: .center)
-                .border(LinearGradient(gradient: gradient,
-                                       startPoint: .topTrailing,
-                                       endPoint: .bottomLeading), width: 6)
-                .cornerRadius(16.0)
-                .clipped()
-                .overlay(ImageOverlay(), alignment: .bottom)
+        NavigationView {
+            VStack {
+                Image("batman")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 250, height: 250, alignment: .center)
+                    .border(LinearGradient(gradient: gradient,
+                                           startPoint: .topTrailing,
+                                           endPoint: .bottomLeading), width: 6)
+                    .cornerRadius(16.0)
+                    .clipped()
+                    .overlay(ImageOverlay(), alignment: .bottom)
+            }
         }
     }
 }

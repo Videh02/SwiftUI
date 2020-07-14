@@ -1,8 +1,9 @@
 //
 //  SceneDelegate.swift
-//  Swift_UI
+//  ListSwift
 //
-
+//  Created by Khanna, Videh Rakesh Rakesh on 13/07/20.
+//  Copyright © 2020 Khanna, Videh Rakesh Rakesh. All rights reserved.
 //
 
 import UIKit
